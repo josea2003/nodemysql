@@ -29,4 +29,5 @@ mysqlConnection.connect((err)=>{
     else console.log('Connection failed'+ JSON.stringify(err, undefined, 2));
 });
 
+//listen
 app.listen(puerto, ()=> console.log(`Listening on port ${puerto}...`));
