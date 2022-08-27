@@ -16,7 +16,7 @@ let mysqlConnection = mysql.createConnection({
     multipleStatements: true
 });
 
-//Read DB
+//Get
 app.get('/clients', (req, res)=>{
     mysqlConnection.query('SELECT * FROM clients', (err, rows, fields)=>{
         if(!err) res.send(rows)
